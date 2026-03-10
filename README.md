@@ -9,6 +9,12 @@
 
 MCP (Model Context Protocol) server for Brevo email marketing platform with comprehensive campaign management, analytics, and automation capabilities.
 
+<p align="center">
+  <a href="https://glama.ai/mcp/servers/@houtini-ai/brevo-mcp">
+    <img width="380" height="200" src="https://glama.ai/mcp/servers/@houtini-ai/brevo-mcp/badge" alt="Brevo MCP server" />
+  </a>
+</p>
+
 ## 🚀 Key Features
 
 ### 📧 **Campaign Management**
