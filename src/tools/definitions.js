@@ -83,11 +83,6 @@ export const TOOLS = [
         },
       },
       required: ['to'],
-      oneOf: [
-        { required: ['subject', 'htmlContent'] },
-        { required: ['subject', 'textContent'] },
-        { required: ['templateId'] },
-      ],
     },
   },
   {
@@ -443,11 +438,9 @@ export const TOOLS = [
           minimum: 1,
         },
         emailTo: {
-          oneOf: [
-            { type: 'string', format: 'email' },
-            { type: 'array', items: { type: 'string', format: 'email' } },
-          ],
-          description: 'Optional: Override test list with specific emails. Normally omit this to use your pre-configured test list.',
+          type: 'array',
+          items: { type: 'string', format: 'email' },
+          description: 'Optional: Override test list with specific email addresses. Normally omit this to use your pre-configured test list.',
         },
       },
       required: ['campaignId'],
